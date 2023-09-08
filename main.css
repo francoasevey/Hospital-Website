@@ -39,3 +39,12 @@ a{
 .bg-blue{
     background-color: var(--fros-blue-color);
 }
+.bg-white{
+    background-color: var(--light-color);
+}
+.text-blue{
+    color: var(--fros-blue-color);
+}
+.text-white{
+    color: var(--light-color);
+}
