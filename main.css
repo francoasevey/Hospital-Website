@@ -108,3 +108,37 @@ button[class ^= navbar]:hover{
 .navbar-show{
     transform: translateX(0);
 }
+.navbar-hide-btn{
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+}
+.nav-item{
+    margin: 1.4rem 0;
+}
+.nav-link{
+    opacity: 0.8;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
+}
+.nav-link:hover{
+    opacity: 1;
+    color: var(--fros-blue-color);
+    transform: translateX(10px);
+}
+.search-icon{
+    display: block;
+    width: 27px;
+    margin-right: 1rem;
+}
+.search-control::placeholder{
+    color: var(--light-gray);
+}
+.search-control{
+    width: 100%;
+    height: 27px;
+    border-radius: 1.9rem;
+    border: 2px solid var(--light-gray);
+    padding: 0 1.5rem;
+}
