@@ -303,6 +303,21 @@ button[class ^= navbar]:hover{
     background-color: var(--fros-blue-color);
     z-index: -2;
 }
+.banner-one{
+    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('/images/banner-1-img.png') top/cover no-repeat;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-one .lead{
+    font-size: 2.8rem;
+    font-weight: 500;
+    max-width: 600;
+}
+.banner-one .text-sm{
+    font-weight: 500;
+}
 @media (min-width: 450px) {
     .navbar-collapse{
         width: 320px;
@@ -313,6 +328,9 @@ button[class ^= navbar]:hover{
     .btn-group .btn:first-child{
         margin-right: 48px;
         margin-bottom: 0;
+    }
+    .border-line{
+        width: 405px;
     }
 }
 @media (min-width: 768px) {
@@ -347,7 +365,25 @@ button[class ^= navbar]:hover{
     }
     .about-inner .container{
         grid-template-columns: repeat(2, 1fr);
-        
+        column-gap: 3rem;
+    }
+    .about-left{
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .about-left .section-head h2{
+        text-align: left;
+    }
+    .border-line{
+        margin-left: 0;
+    }
+    .border-line::after{
+        left: 0;
+        transform: translateX(0);
+    }
+    .about-right{
+        margin-left: auto;
+        margin-top: 11.2rem;
     }
 } 
 @media (min-width: 1200px) {
