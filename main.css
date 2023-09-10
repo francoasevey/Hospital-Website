@@ -275,6 +275,34 @@ button[class ^= navbar]:hover{
 .about .btn-white {
     color: var(--dark-gray);
 }
+.about-right .img{
+    width: 100%;
+    background-color: #3983fe;
+    max-width: 537px;
+    position: relative;
+}
+.about-right .img img{
+    padding-top: 10rem;
+    transform: scaleX(1.03);
+}
+.about-right img::after, .about-right .img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.about-right .img::after{
+    top: -56px;
+    left: 0;
+    background-color: #0060ff;
+    z-index: -1;
+}
+.about-right .img::before{
+    top: -112px;
+    left: 0;
+    background-color: var(--fros-blue-color);
+    z-index: -2;
+}
 @media (min-width: 450px) {
     .navbar-collapse{
         width: 320px;
@@ -316,6 +344,10 @@ button[class ^= navbar]:hover{
         bottom: 0;
         right: 0;
         padding-left: 5rem;
+    }
+    .about-inner .container{
+        grid-template-columns: repeat(2, 1fr);
+        
     }
 } 
 @media (min-width: 1200px) {
