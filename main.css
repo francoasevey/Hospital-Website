@@ -147,7 +147,7 @@ button[class ^= navbar]:hover{
         width: 320px;
     }
 }
-@media (min-width: 450px) {
+@media (min-width: 1200px) {
  .navbar-show-btn, .navbar-hide-btn{
     display: none;
  }   
@@ -209,4 +209,8 @@ button[class ^= navbar]:hover{
  .search-control{
     width: 150px;
  }
+}
+.resize-animation-stopper *{
+    animation: none!important;
+    transition: none!important;
 }
