@@ -142,3 +142,71 @@ button[class ^= navbar]:hover{
     border: 2px solid var(--light-gray);
     padding: 0 1.5rem;
 }
+@media (min-width: 450px) {
+    .navbar-collapse{
+        width: 320px;
+    }
+}
+@media (min-width: 450px) {
+ .navbar-show-btn, .navbar-hide-btn{
+    display: none;
+ }   
+ .navbar-collapse{
+    transform: translateX(0);
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    transition: none;
+ }
+ .navbar-nav{
+    display: flex;
+ }
+ .nav-item{
+    margin: 0;
+    margin-left: 3.5rem;
+ }
+ .nav-link{
+    color: var(--light-color);
+    opacity: 1;
+    font-weight: 500;
+    position: relative;
+ }
+ .nav-link::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--light-color);
+    opacity: 0;
+    transition: var(--transition);
+ }
+ .nav-link:hover{
+    transform: none;
+    color: var(--light-color);
+ }
+ .nav-link:hover::after{
+    opacity: 1;
+    width: 100%;
+ }
+ .search-bar{
+    margin-left: 5.5rem;
+ }
+ .search-inner-right{
+    width: 100%;
+ }
+ .search-inner-right img{
+    padding-left: 0;
+    max-width: 647px;
+ }
+ .search-control{
+    width: 150px;
+ }
+}
