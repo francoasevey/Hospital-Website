@@ -231,11 +231,56 @@ button[class ^= navbar]:hover{
 .header-inner-left .btn-group{
     justify-content: center;
 }
+.header-inner-right{
+    margin-top: 6rem;
+}
+.header-inner-right img{
+    max-width: 520px;
+    margin:  0 auto;
+}
 @media (min-width: 450px) {
     .navbar-collapse{
         width: 320px;
     }
+    .btn-group .btn{
+        width: auto;
+    }
+    .btn-group .btn:first-child{
+        margin-left: 48px;
+        margin-bottom: 0;
+    }
 }
+@media (min-width: 768px) {
+    .header-inner-left h1{
+        font-size: 5.7rem;
+    }
+}
+@media (min-width: 992px){
+    .header-inner{
+        padding-top: 3.2rem;
+    }
+    .header-inner .container{
+        grid-template-columns: 545px auto;
+        align-items: center;
+        height: calc(100vh - 32px);
+        position: relative;
+    }
+    .header-inner-left{
+        text-align: left;
+    }
+    .header-inner-left .text{
+        margin-left: 0;
+    }
+    .header-inner-left .btn-group{
+        justify-content: start;
+    }
+    .header-inner-right img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-left: 5rem;
+    }
+} 
 @media (min-width: 1200px) {
  .navbar-show-btn, .navbar-hide-btn{
     display: none;
