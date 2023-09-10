@@ -238,6 +238,43 @@ button[class ^= navbar]:hover{
     max-width: 520px;
     margin:  0 auto;
 }
+.section-head h2{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.border-line{
+    height: .4rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--light-gray);
+    position: relative;
+}
+.border-line::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 102px;
+    background-color: var(--light-blue-color);
+}
+.about-left{
+    margin-bottom: 6rem;
+}
+.about-right{
+    margin-top: 16.8rem;
+}
+.about-left .text{
+    margin: 5.6rem 0;
+    line-height: 2.3;
+}
+.about .btn-white {
+    color: var(--dark-gray);
+}
 @media (min-width: 450px) {
     .navbar-collapse{
         width: 320px;
@@ -246,7 +283,7 @@ button[class ^= navbar]:hover{
         width: auto;
     }
     .btn-group .btn:first-child{
-        margin-left: 48px;
+        margin-right: 48px;
         margin-bottom: 0;
     }
 }
@@ -343,6 +380,18 @@ button[class ^= navbar]:hover{
  .search-control{
     width: 150px;
  }
+ .header-inner-right{
+    width: 100%;
+ }
+ .header-inner-right img{
+    padding-left: 0;
+    max-width: 647px;
+ }
+}
+@media (min-width: 1480px) {
+    .container{
+        max-width: 81vw;
+    }
 }
 .resize-animation-stopper *{
     animation: none!important;
