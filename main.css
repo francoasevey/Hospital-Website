@@ -368,6 +368,44 @@ button[class ^= navbar]:hover{
     margin-top: 6rem;
     justify-content: center;
 }
+.doc-panel-inner{
+    margin-top: 8rem;
+}
+.doc-panel-item{
+    margin-bottom: 6rem;
+}
+.doc-panel-item:last-child{
+    margin-bottom: 0;
+}
+.doc-panel-item .img{
+    position: relative;
+    height: 440px;
+    background-color: var(--light-gray);
+    overflow: hidden;
+    align-items: flex-end;
+}
+.doc-panel-item .img .info{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+    transition: var(--transition);
+}
+.doc-panel-item .img{
+    max-width: 357px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.doc-panel-item:hover .info{
+    bottom: 0;
+}
+.package-service-inner{
+    margin-top: 14rem;
+}
+.package-service{
+    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('/images/package-service-img.jpg') top/cover no-repeat;
+}
 @media (min-width: 450px) {
     .navbar-collapse{
         width: 320px;
@@ -387,8 +425,14 @@ button[class ^= navbar]:hover{
     .header-inner-left h1{
         font-size: 5.7rem;
     }
-    .services-inner{
+    .services-inner, .doc-panel-inner{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .doc-panel-inner{
+        column-gap: 3rem;
+    }
+    .doc-panel .section-head h2{
+        text-align: left;
     }
 }
 @media (min-width: 992px){
@@ -455,6 +499,12 @@ button[class ^= navbar]:hover{
     .banner-two-left img{
         width: 100%;
         max-width: 100%;
+    }
+    .doc-panel-inner{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .doc-panel-item{
+        margin-bottom: 0;
     }
 } 
 @media (min-width: 1200px) {
@@ -532,6 +582,9 @@ button[class ^= navbar]:hover{
  }
  .service-item{
     margin-bottom: 0;
+ }
+ .doc-panel-inner{
+    column-gap: 9rem;
  }
 }
 @media (min-width: 1480px) {
