@@ -101,7 +101,7 @@ button[class ^= navbar]:hover{
     flex-direction: column;
     justify-content: space-between;
     box-shadow: -3px 0 10px 4px rgba(0, 0, 0, 0.1);
-    transform: translate3d(110%);
+    transform: translateX(110%);
     transition: var(--transition);
     z-index: 1000;
 }
