@@ -285,7 +285,7 @@ button[class ^= navbar]:hover{
     padding-top: 10rem;
     transform: scaleX(1.03);
 }
-.about-right img::after, .about-right .img::before{
+.about-right .img::after, .about-right .img::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -313,7 +313,7 @@ button[class ^= navbar]:hover{
 .banner-one .lead{
     font-size: 2.8rem;
     font-weight: 500;
-    max-width: 600;
+    max-width: 600px;
 }
 .banner-one .text-sm{
     font-weight: 500;
@@ -329,13 +329,16 @@ button[class ^= navbar]:hover{
     max-width: 240px;
     margin: auto;
 }
+.line-art img{
+    width: 30px;
+}
 .line-art div{
     width: 100px;
     height: 2px;
     background-color: var(--light-gray);
 }
 .services-inner{
-    padding: 3rem;
+    padding: 6rem 0;
 }
 .service-item{
     padding: 3rem;
@@ -386,6 +389,7 @@ button[class ^= navbar]:hover{
 }
 .doc-panel-item .img .info{
     position: absolute;
+    bottom: -100%;
     left: 0;
     width: 100%;
     height: 100px;
@@ -464,6 +468,9 @@ button[class ^= navbar]:hover{
 }
 .post-item h4{
     margin-bottom: 1rem;
+}
+.post-item .text{
+    padding: 1rem 0;
 }
 .post-item .info{
     justify-content: space-between;
@@ -781,7 +788,7 @@ button[class ^= navbar]:hover{
     grid-template-columns: repeat(3, 1fr);
  }
  .post-item{
-    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
  }
  .contact .container{
     grid-template-columns: auto 514px;
