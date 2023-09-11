@@ -472,6 +472,39 @@ button[class ^= navbar]:hover{
 .post-item .info .text{
     padding-bottom: 0;
 }
+.contact-left{
+    margin-bottom: 6rem;
+    height: 100%;
+}
+.contact-left iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-right{
+    padding: 5rem 4rem;
+}
+.contact-right form{
+    margin-top: 5rem;
+}
+.form-element .form-control{
+    width: 100%;
+    background-color: #3373dd;
+    border: none;
+    outline: 0;
+    padding: 1rem 1.6rem;
+    margin-bottom: 1.6rem;
+    color: var(--light-color);
+}
+.form-element .form-control::placeholder{
+    color: var(--light-color);
+}
+.btn-submit{
+    margin-top: 4rem;
+}
+.btn-submit i{
+    margin-right: 2rem;
+}
 @media (min-width: 450px) {
     .navbar-collapse{
         width: 320px;
